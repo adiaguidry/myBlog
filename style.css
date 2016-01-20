@@ -1,0 +1,73 @@
+body{
+    /*font-family: 'Candal', sans-serif;*/
+    font-family: 'Advent Pro', sans-serif;
+    padding-top:50px;
+}
+ul li{
+    list-style: none;
+}
+ul li a, h3 {
+    text-decoration: none;
+    font-size: 2em;
+    color: teal;
+}
+.nav h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.blogs{
+    font-family: 'Candal', sans-serif;
+    margin: 2% 0;
+}
+.blogs h1 {
+    margin: 0 0 5%  0;
+}
+.sidebar img {
+    margin: 2% 0;
+}
+.create {
+    border: 2px solid #222222;
+    padding: 5%;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.productsrow {
+    -moz-column-width: 18em;
+    -webkit-column-width: 18em;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em;
+
+}
+
+.menu-category {
+    display: inline-block;
+    margin-bottom:  0.25rem;
+    padding:  1rem;
+    width:  100%;
+}
+
+.product-image {
+    width: 100%;
+}
+
+.product {
+    padding-top:20px;
+}
+
+.btn-product {
+    background-color:#222;
+    color:#eee;
+    border-radius:0;
+}
+
+.list-group-item.active {
+    background-color: #222;
+    border-color: #222;
+}
+
+
+

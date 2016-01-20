@@ -1,0 +1,12 @@
+<div class="row">
+<div class="col-sm-12">
+    <div class="productsrow">
+        <div ng-repeat="blog in blog_array" class="product menu-category">
+            <div class="menu-category-name list-group-item active">{{ blog.title }}</div>
+            <div class="product-image">
+                <img class="product-image menu-item list-group-item" src='{{ blog.src }}'>
+            </div> <a href="#" class="menu-item list-group-item"> {{ blog.summary }}</a>
+        </div>
+    </div>
+</div>
+</div>

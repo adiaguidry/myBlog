@@ -1,0 +1,16 @@
+<div ng-controller="blogCtrl as bc">
+    <div class="row blogs">
+        <h1>All My Personal Blogs</h1>
+        <div ng-repeat="blog in blogs" class="col-md-5 col-md-offset-1">
+            <img width="50%" ng-src="{{ blog.image}}">
+            <h2>{{ blog.title }}</h2>
+            <p> {{ blog.summary}} <br/>
+                <button class="btn btn-info">edit</button>
+                <button class="btn btn-danger" ng-click="deleteBlog($index, blog)">delete</button>
+            </p>
+
+        </div>
+    </div>
+
+</div>
+
