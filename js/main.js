@@ -25,7 +25,8 @@ blog.controller('homeCtrl',['$scope', '$log', '$firebaseArray', 'myblog', functi
 blog.controller('blogCtrl',['$scope', '$log','$firebaseArray', 'myblog', function ($scope, $log, $firebaseArray, myblog) {
    $scope.blogs = myblog.blogs;
     $scope.deleteBlog=myblog.deleteBlog;
-
+    $scope.editing = false;
+    $scope.edit = "edit";
 
 }])
 blog.controller('createCtrl', ['$scope', 'myblog', function ($scope,  myblog) {

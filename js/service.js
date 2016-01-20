@@ -87,8 +87,8 @@ blog.service('myblog', function($http, $q, $log, $firebaseArray){
     }
     self.deleteBlog = function($index, object){
         self.blogs.splice($index, 1);
-        console.log($index, object);
-        self.blogs.$remove(object);
+        console.log($index);
+        //self.blogs.$remove(object);
     }
 
 
