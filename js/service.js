@@ -75,7 +75,7 @@ blog.service('myblog', function($http, $q, $log, $firebaseArray){
     var blogRef = new Firebase("https://adiasblog.firebaseio.com/users");
     self.blogs = $firebaseArray(blogRef);
     var query = blogRef.orderByChild("timestamp").limitToLast(10);
-    this.filteredblogs = $firebaseArray(query);
+    self.filteredblogs = $firebaseArray(query);
 
     self.createBlog = function(object){
         self.blogs.push(object);

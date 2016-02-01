@@ -31,5 +31,8 @@ blog.controller('blogCtrl',['$scope', '$log','$firebaseArray', 'myblog', functio
 }])
 blog.controller('createCtrl', ['$scope', 'myblog', function ($scope,  myblog) {
         $scope.createBlog = myblog.createBlog;
+        $scope.clear = function(){
+            $scope.blog={};
+        }
 
 }])
